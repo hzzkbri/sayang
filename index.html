@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Message</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'LoveFont';
+      src: url('assets/love.ttf') format('truetype');
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-screen">
+    <img id="slideshow" src="assets/hilda (1).jpg" alt="Loading..." />
+    <div class="loading-text">
+      <p>Loading...</p>
+      <p>sabar ya sayangkuu...</p>
+    </div>
+  </div>
+
+  <main id="main-content" class="hidden">
+    <h1 id="typing-love" class="love-title"></h1>
+
+    <div id="longtext-box">
+      <p id="longtext"></p>
+    </div>
+
+    <section class="sholat-section">
+      <h2>Reminder Sholat Sayang ✨</h2>
+      <table id="sholat-table">
+        <thead>
+          <tr>
+            <th>Waktu</th>
+            <th>Jam</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <div id="battery-status" class="battery-box"></div>
+    <div class="floating-text">scroll terus ya sayang 💌</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

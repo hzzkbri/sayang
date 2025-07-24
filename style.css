@@ -1,0 +1,118 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom, #ff4d6d, #ff94a6);
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+h1.love-title {
+  font-family: 'LoveFont', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+/* ===== Loading Screen ===== */
+#loading-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 192, 203, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#slideshow {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+  z-index: 10;
+}
+
+/* ===== Long Text Box ===== */
+#longtext-box {
+  margin: 2rem auto;
+  max-width: 80vw;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== Sholat Table ===== */
+.sholat-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.sholat-section h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#sholat-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+
+#sholat-table th, #sholat-table td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* ===== Battery Box ===== */
+.battery-box {
+  margin: 2rem auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* ===== Floating Text ===== */
+.floating-text {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 1rem;
+  color: #fff;
+  animation: float 2s ease-in-out infinite;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
